@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+@import url("./css/arrow.css");
+@import url("./css/order.css");
+@import url("./css/blockquote.css");
+@import url("./css/media-queries.css");
+@import url("./css/nav-icon.css");
+@import url("./css/description.css");
+
+
+
+/* Reset Styling */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --lobster: "Lobster", cursive;
+  --indie: "Indie Flower", cursive;
+  --header: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --header-color: teal;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: black !important;
+}
+
+a:hover {
+  color: white;
+  text-decoration: double underline black;
+}
+
+.main-nav__mobile,
+.main-nav__mobile--slide {
+  visibility: hidden;
+  opacity: 1;
+}
+
+.navigation {
+  position: relative;
+  width: 100%;
+  min-height: 700px;
+  background-image: url(./images/revenant-gallery-03-gallery-image.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 2;
+}
+
+.navigation__logo {
+  font-family: var(--lobster);
+  font-size: 2.3em;
+  font-weight: 700;
+  padding-top: 50px;
+  padding-left: 50px;
+  color: #e0ffff;
+  font-style: italic;
+}
+
+.top-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.navigation__menu ul {
+  display: flex;
+  position: relative;
+  left: 100px;
+  margin: 50px;
+}
+
+.navigation__menu ul li {
+  padding: 0 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.navigation__menu ul li a {
+  color: antiquewhite !important;
+}
+
+.navigation__menu ul li a:hover {
+  text-decoration: underline whitesmoke;
+}
+
+.navigation__mobile--slide {
+  visibility: hidden;
+}
+
+.jumbotron .jumbotron__header {
+  margin: 0 auto;
+  font-size: 3em;
+  text-align: center;
+  display: block;
+  color: #e0ffff;
+  width: 70%;
+  font-family: var(--header);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.contact {
+  width: 200px;
+  height: 300px;
+  margin: 50px 40px;
+}
+
+fieldset {
+  border: 1px solid black;
+}
+
+.contact__header {
+  font-size: 1.2em;
+  font-family: var(--header);
+  color: #e0ffff;
+  text-decoration: double underline;
+  font-style: italic;
+}
+
+.contact .input {
+  width: 270px;
+  height: 30px;
+  margin: 10px 80px;
+  font-family: "Indie Flower", cursive;
+  font-weight: bold;
+}
+
+.contact__submit {
+  width: 270px;
+  height: 30px;
+  border-radius: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background: turquoise;
+  border: 0;
+  margin: 10px 80px;
+}
+
+#info {
+  width: 100%;
+  height: 00px;
+  background: black;
+}
+
+.telephones {
+  position: absolute;
+  top: 450px;
+  right: 100px;
+}
+
+.telephones p {
+  color: white;
+  font-family: var(--lobster);
+  font-size: 2em;
+  z-index: 0;
+}
+
+.navigation__mobile,
+.navigation__mobile--slide {
+  visibility: hidden;
+  opacity: 1;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 250px;
+  background-color: teal;
+}
+
+#contact__bottom {
+  margin: 50px;
+}
+
+.contact__telephone {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 110px;
+}
+
+.contact__telephone > * {
+  padding: 15px 10px;
+}
+
+.contact__telephone p {
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  font-family: var(--indie);
+  color: whitesmoke;
+}
+
+.contact__telephone img {
+  width: 45px;
+  height: 45px;
+}
+
+.contact__telephone--life img {
+  width: 60px;
+}

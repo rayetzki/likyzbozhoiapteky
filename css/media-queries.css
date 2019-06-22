@@ -1,0 +1,63 @@
+@media only screen and (max-width: 960px) {
+  .arrow {
+    display: none;
+  }
+
+  .order {
+    margin-top: -50px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .navigation__logo {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+  }
+
+  .telephones {
+    display: none;
+  }
+
+  .contact {
+    position: relative;
+    left: calc(50% - 270px);
+  }
+
+  .navigation__menu {
+    visibility: hidden;
+  }
+
+  #nav-icon1 {
+    visibility: visible;
+    position: absolute;
+    right: 25px;
+    top: 43px;
+  }
+
+  .navigation__mobile--slide {
+    position: absolute;
+    right: 20px;
+    top: 110px;
+    background: white;
+    box-shadow: 2px 2px black;
+    border-top: 1px solid black;
+  }
+
+  .navigation__mobile--slide li {
+    font-size: 1.25em;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: underline indianred;
+    margin: 10px 0;
+  }
+
+  .contact__telephone {
+    position: relative;
+    bottom: 100px;
+    left: 50px;
+  }
+  
+  .description {
+    margin-top: -50px;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "liky",
+  "version": "1.0.0",
+  "description": "\"Cure of rotting infections@",
+  "main": "script.js",
+  "scripts": {},
+  "author": "Illia Raietskyi",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
