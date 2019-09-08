@@ -1,7 +1,7 @@
 .description {
   min-height: 80vh;
   text-align: center;
-  background: url('/images/herbs_and_spices.jpg');
+  background: url('../../images/herbs_and_spices.jpg');
   background-size: cover;
   padding: 50px 0;
 }
@@ -14,11 +14,10 @@
 }
 
 .description__text {
-  color: black;
+  color: azure;
   font-family: var(--indie);
   font-size: 1.2em;
   width: 70%;
   display: inline-block;
   margin-top: 25px;
 }
-

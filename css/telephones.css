@@ -1,0 +1,17 @@
+.telephones {
+    height: max-content;
+    margin-right: 100px;
+}
+  
+.telephones p {
+    color: white;
+    font-family: var(--lobster);
+    font-size: 2em;
+    z-index: 0;
+}
+  
+@media only screen and (max-width: 880px) {
+    .telephones {
+      display: none;
+    }
+}

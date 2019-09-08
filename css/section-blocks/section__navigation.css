@@ -1,0 +1,103 @@
+.main-nav__mobile,
+.main-nav__mobile--slide {
+  display: none;
+  opacity: 1;
+}
+
+.navigation__mobile,
+.navigation__mobile--slide {
+  display: none;
+  opacity: 1;
+}
+
+.navigation {
+  background-image: url(../../images/revenant-gallery-03-gallery-image.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 2;
+}
+
+.navigation__logo {
+  font-family: var(--lobster);
+  font-size: 2.3em;
+  font-weight: 700;
+  color: #e0ffff;
+  font-style: italic;
+  margin: 0;
+  line-height: 1;
+  height: max-content;
+  width: max-content;
+}
+
+.top-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2em;
+}
+
+.navigation__menu ul {
+  display: flex;
+}
+
+.navigation__menu ul li {
+  padding: 0 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.navigation__menu ul li a {
+  color: antiquewhite !important;
+}
+
+.navigation__menu ul li a:hover {
+  text-decoration: underline whitesmoke;
+}
+
+.navigation__mobile--slide {
+  display: none;
+}
+
+@media screen and (max-width: 880px) {
+    .top-navigation {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .navigation__menu {
+        display: none;
+    }
+    
+    #nav-icon1 {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 33px;
+    }
+    
+    .navigation__mobile--slide {
+        position: absolute;
+        right: 20px;
+        top: 110px;
+        background: white;
+        box-shadow: 2px 2px black;
+        border-top: 1px solid black;
+    }
+    
+    .navigation__mobile--slide li {
+        font-size: 1.25em;
+        font-family: "Montserrat", sans-serif;
+        text-decoration: underline indianred;
+        margin: 10px 0;
+    }
+}
+
+
+@media only screen and (max-width: 960px) {
+    .arrow {
+      display: none;
+    }
+}

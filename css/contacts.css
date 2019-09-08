@@ -1,0 +1,53 @@
+#contact__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.contact__header {
+    font-size: 1.2em;
+    font-family: var(--header);
+    color: #e0ffff;
+    text-decoration: double underline;
+    font-style: italic;
+}
+  
+.contact .input {
+    width: 270px;
+    height: 30px;
+    margin: 10px 80px;
+    font-family: "Indie Flower", cursive;
+    font-weight: bold;
+}
+  
+.contact__submit {
+    width: 270px;
+    height: 30px;
+    border-radius: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: rgb(116, 128, 126);
+    border: 0;
+    margin: 10px 80px;
+}
+
+fieldset {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+
+@media only screen and (max-width: 880px) {  
+    .contact {
+      position: relative;
+      left: calc(50% - 270px);
+    }
+  
+    .contact__telephone {
+      position: relative;
+      bottom: 100px;
+      left: 50px;
+    }
+  }
