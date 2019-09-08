@@ -1,9 +1,7 @@
-.content {
-  position: absolute;
+.arrow {
+  position: relative;
   left: 50%;
-  top: 90%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  width: max-content;
 }
 
 /* Arrow & Hover Animation */

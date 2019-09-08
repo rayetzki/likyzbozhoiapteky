@@ -7,9 +7,9 @@ icon.addEventListener('click', () => {
   icon.classList.toggle('open');
   
   if (icon.classList.contains('open')) {
-    menu.style.visibility = 'visible';
+    menu.style.display = 'block';
   } else {
-    menu.style.visibility = 'hidden';
+    menu.style.display = 'none';
   }
 });
 

@@ -13,6 +13,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  line-height: initial;
 }
 
 *,
@@ -65,14 +66,11 @@ a:hover {
 
 .main-nav__mobile,
 .main-nav__mobile--slide {
-  visibility: hidden;
+  display: none;
   opacity: 1;
 }
 
 .navigation {
-  position: relative;
-  width: 100%;
-  min-height: 700px;
   background-image: url(./images/revenant-gallery-03-gallery-image.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -83,23 +81,23 @@ a:hover {
   font-family: var(--lobster);
   font-size: 2.3em;
   font-weight: 700;
-  padding-top: 50px;
-  padding-left: 50px;
   color: #e0ffff;
   font-style: italic;
+  margin: 0;
+  line-height: 1;
+  height: max-content;
+  width: max-content;
 }
 
 .top-navigation {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2em;
 }
-
 
 .navigation__menu ul {
   display: flex;
-  position: relative;
-  left: 100px;
-  margin: 50px;
 }
 
 .navigation__menu ul li {
@@ -120,11 +118,11 @@ a:hover {
 }
 
 .navigation__mobile--slide {
-  visibility: hidden;
+  display: none;
 }
 
 .jumbotron .jumbotron__header {
-  margin: 0 auto;
+  margin: 30px auto;
   font-size: 3em;
   text-align: center;
   display: block;
@@ -135,14 +133,19 @@ a:hover {
   font-style: italic;
 }
 
-.contact {
-  width: 200px;
-  height: 300px;
-  margin: 50px 40px;
-}
 
 fieldset {
   border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+}
+
+#contact__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contact__header {
@@ -167,7 +170,7 @@ fieldset {
   border-radius: 100px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-  background: turquoise;
+  background: rgb(116, 128, 126);
   border: 0;
   margin: 10px 80px;
 }
@@ -179,9 +182,8 @@ fieldset {
 }
 
 .telephones {
-  position: absolute;
-  top: 450px;
-  right: 100px;
+  height: max-content;
+  margin-right: 100px;
 }
 
 .telephones p {
@@ -193,7 +195,7 @@ fieldset {
 
 .navigation__mobile,
 .navigation__mobile--slide {
-  visibility: hidden;
+  display: none;
   opacity: 1;
 }
 
@@ -205,10 +207,6 @@ fieldset {
   width: 100%;
   min-height: 250px;
   background-color: teal;
-}
-
-#contact__bottom {
-  margin: 50px;
 }
 
 .contact__telephone {
@@ -235,4 +233,11 @@ fieldset {
 
 .contact__telephone--life img {
   width: 60px;
+}
+
+@media screen and (max-width: 880px) {
+  .top-navigation {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
