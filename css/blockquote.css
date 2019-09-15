@@ -3,18 +3,15 @@
 .container {
   font: normal 300 1.5em / 2em var(--indie), sans-serif;
   width: 100%;
-  max-width: 780px;
-  min-width: 500px;
-  height: 400px;
-  margin: 2em auto 0;
   padding: 1.5em;
+  display: flex;
 }
 
 blockquote {
   display: block;
   border-width: 2px 0;
   border-style: solid;
-  border-color: #eee;
+  border-color: rgb(158, 148, 148);
   padding: 1.5em 0 0.5em;
   margin: 1.5em 0;
   position: relative;
