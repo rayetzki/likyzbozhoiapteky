@@ -40,14 +40,24 @@ fieldset {
 }
 
 @media only screen and (max-width: 880px) {  
-    .contact {
-      position: relative;
-      left: calc(50% - 270px);
-    }
-  
     .contact__telephone {
       position: relative;
       bottom: 100px;
       left: 50px;
     }
+  }
+
+  @media only screen and (max-width: 880px) {   
+      #contact__top {
+        justify-content: center;
+      }
+
+      .contact__header {
+        display: none;
+      }
+
+      fieldset {
+        border: none;
+        margin: 25px auto;
+      }
   }

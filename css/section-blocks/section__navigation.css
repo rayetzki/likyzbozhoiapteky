@@ -82,7 +82,7 @@
     .navigation__mobile--slide {
         position: absolute;
         right: 20px;
-        top: 110px;
+        top: 85px;
         background: white;
         box-shadow: 2px 2px black;
         border-top: 1px solid black;
@@ -101,4 +101,18 @@
     .arrow {
       display: none;
     }
+}
+
+@media only screen and (max-width: 380px) {
+  .navigation__logo {
+    font-size: 2em;
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 381px) and (max-width: 480px) {
+  .navigation__logo {
+    font-size: 2.05em;
+    width: 95%;
+  }
 }

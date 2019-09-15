@@ -20,18 +20,20 @@
   padding: 10px 0;
 }
 
-.order__call_us {
-  width: 400px;
-  height: 200px;
-}
-
-.order__call_us,
-.order__make,
-.order__notable {
+.order__container > * {
   background: var(--header-color);
   clip-path: polygon(0 100%, 0 0, 100% 0, 95% 100%);
   border-radius: 5px;
-  margin: 5px;
+  margin: 10px;
+  flex: 1;
+}
+
+.order__make {
+  flex: 2;
+}
+
+.order__notable {
+  flex: 2;
 }
 
 .order__call_us p,
@@ -53,10 +55,5 @@
 }
 
 .order__make {
-  width: 300px;
-  height: 400px;
-}
-
-.order__notable {
-  width: 300px;
+  width: max-content;
 }
